@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+ int ans= std::rand()%6;
+ if (ans == 0) {
+    std::cout << "Don't pursue happiness – create it.\n";
+  } else if (ans == 1) {
+    std::cout << " All things are difficult before they are easy.\n";
+  } else if (ans == 2) {
+    std::cout << " The early bird gets the worm, but the second mouse gets the cheese.\n";
+  } else if (ans == 3) {
+    std::cout << "Someone in your life needs a letter from you.\n";
+  } else if (ans == 4) {
+    std::cout << " The fortune you search for is in another cookie.\n";
+  } else {
+    std::cout << " Help! I'm being held prisoner in a Chinese bakery!\n";
+  }
+  std::cout << "\nLucky numbers: ";
+  for (int i = 0; i < 6; i++) {
+    std::cout << std::rand() % 51 << " ";
+  }
+  std::cout << "\n";
+
+  return 0;
+}
+
